@@ -1,0 +1,205 @@
+/* IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+body {
+  background-color: #141414;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: linear-gradient(180deg, #000000d1, transparent);
+  width: 100%;
+  z-index: 999;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.header-right ul {
+  padding-right: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #e5e5e5;
+  font-size: 20px;
+}
+
+.header-right ul li {
+  margin-right: 32px;
+  cursor: pointer;
+}
+
+.logo-netflix img {
+  height: 70px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+nav {
+  color: #e5e5e5;
+}
+
+.menu-superior ul {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu-superior ul li {
+  margin-right: 16px;
+  font-size: 14px;
+  transition: 0.3s color ease-in-out;
+  cursor: pointer;
+}
+
+.menu-superior ul li:hover {
+  color: #b3b3b3;
+}
+
+.banner-principal {
+  position: relative;
+}
+
+.banner-principal .overlay {
+  background-image: linear-gradient(180deg, transparent, #141414);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.banner-principal .bg {
+  width: 100%;
+  object-fit: cover;
+  height: 80vh;
+}
+
+.banner-principal__buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner-principal__resume {
+  position: absolute;
+  bottom: 30%;
+  left: 50px;
+}
+
+.banner-principal__buttons .btn {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2.4rem;
+}
+
+.banner-principal__buttons .btn i {
+  margin-right: 16px;
+}
+
+.banner-principal__title img {
+  object-fit: cover;
+  width: 50%;
+}
+
+.banner-principal__title {
+  margin-bottom: 40px;
+  color: #e5e5e5;
+}
+
+.banner-principal__title h2 {
+  font-size: 24px;
+  margin: 40px 0 20px 0;
+}
+
+.banner-principal__title p {
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+  max-width: 500px;
+  line-height: 120%;
+}
+
+.btn {
+  align-items: center;
+  appearance: none;
+  border: 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+  padding: 0.8rem;
+  position: relative;
+  user-select: none;
+  word-break: break-word;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s opacity ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+.btn-primary {
+  background-color: white;
+  color: black;
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.212);
+  color: white;
+}
+
+.mais-videos {
+  color: #e5e5e5;
+}
+
+.mais-videos h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #e5e5e5;
+  margin-bottom: 16px;
+}
+
+.mais-videos {
+  position: relative;
+  top: -150px;
+}
+
+.mais-videos .owl-carousel img {
+  border-radius: 5px;
+  cursor: grab;
+}
+
+.mais-videos .owl-carousel {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+  .banner-principal__resume {
+    padding-right: 50px;
+  }
+  .banner-principal__buttons {
+    flex-direction: column;
+  }
+  .banner-principal__buttons .btn {
+    margin-right: 0;
+  }
+}
